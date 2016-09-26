@@ -1,5 +1,6 @@
 html, body, .page {
   height: 100%;
+  width: 100%;
 
 }
 .page {
@@ -27,6 +28,9 @@ html, body, .page {
   position: absolute;
   z-index: -1;
 }
+.page_skills {
+  background-image: url(../images/garage.jpg);
+}
 
 .top {
   color: rgba(0, 0, 0,.8);
@@ -51,11 +55,14 @@ ul {
   border: solid 5px #1D3B63;
   margin: 0 30px;
   border-radius: 7px;
+  background: transparent;
 }
-.top_index li {
+/*.top_index li {
   background: #848388;
+}*/
+.top_skills li {
+  border: solid rgba(116, 156, 152, 0.84) 5px;
 }
-
 .navbar a {
   font-family: 'Old Standard TT', 'sans serif';
   text-decoration: none;
@@ -70,7 +77,10 @@ ul {
   color: #1D3B63;
 }
 .navbar_contact a {
-    color: rgba(0,0,0,.8);
+  color: rgba(0,0,0,.8);
+}
+.navbar_skills a {
+  color: rgba(116, 156, 152, 0.84);
 }
 p a {
   text-decoration: none;
@@ -83,10 +93,8 @@ display: inline-block;
 }*/
 
 .homepic {
-  background: hover url();
-  position: absolute;
-  left: -64px;
-  top: 4px;
+  float: left;
+  padding-top: 5px;
 }
 .homepic:active {
   transform: translateY(1px);
